@@ -15,7 +15,7 @@ def main():
 		print("Abort.")
 		sys.exit(1)
 
-	os.system("bash <(curl -sL https://raw.githubusercontent.com/node-red/linux-installers/master/deb/update-nodejs-and-nodered)")
+	os.system("bin/bash <(curl -sL https://raw.githubusercontent.com/node-red/linux-installers/master/deb/update-nodejs-and-nodered)")
 	os.system("systemctl enable nodered")
 	os.system("systemctl start nodered")
 	os.system("sync")
